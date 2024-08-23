@@ -219,15 +219,44 @@ let checkEveryMethod = personsArray.every((person, index)=> {			//--Method: Ever
 console.log(checkEveryMethod);
 
 
+
 //	Array find() Method
-const arrayThree = [1,1,2,3,4,5,2];
+const arrayThree = [1,2,3];
 let checkFindMethod = arrayThree.find((item, index)=> item === 2);
 console.log(checkFindMethod, 'find');
 
+
 // Array reduce() Method
-let checkReduceMthod = arrayThree.reduce((acc, currenct, index,array)=> {
-	
-})
+let checkReduceMthod = arrayThree.reduce((acc, current, index,array)=> {
+	console.log(acc ,current, index, array);
+	return acc + current;
+},0);
+console.log(checkReduceMthod);
+
+
 // Array includes() Method
+console.log(arrayThree.includes(2));
+
+
 // indexOf Method
+console.log(arrayThree.indexOf(20)); //if element is not present it returns -1
+
+
 // findIndex Method
+
+let findIndexMethod = arrayThree.findIndex((item, index)=> item === 100);
+console.log(findIndexMethod, 'findIndex');
+
+
+
+
+
+
+
+
+//----------------------------Async Await-----------------------------
+
+
+
+
+
