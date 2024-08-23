@@ -179,26 +179,55 @@ const personsArray = [
 		},
 		{
 			name : 'Mahakal',
-			age : 0,
+			age : 45,
 			city : 'Ujjain',
 		},
 		{
 			name : 'Mahadev',
-			age : 0,
+			age : 45,
 			city : 'Maheshvar',
 		},
 
 	];
 
+//--Method: Map
 let extractPersonsNames = personsArray.map((person, index) => {   //--Method: Map
 	return `${person.name}-${person.city}`;
 });
-
 console.log(extractPersonsNames);
 
+
+//--Method: Filter
 let extractPoersonFromKelas = personsArray.filter((person, index) => {   //--Method: Filter
-	return person.city === "Kelas"
-})
-
-
+	return person.age === 45; 
+});
 console.log(extractPoersonFromKelas);
+
+
+//--Method: Some
+let checkSomeMethod = personsArray.some((person, index)=> {			//--Method: Some
+	return person.age === 25;
+});
+console.log(checkSomeMethod);
+
+
+//--Method: Every
+let checkEveryMethod = personsArray.every((person, index)=> {			//--Method: Every
+	return person.age === 25;
+
+} );
+console.log(checkEveryMethod);
+
+
+//	Array find() Method
+const arrayThree = [1,1,2,3,4,5,2];
+let checkFindMethod = arrayThree.find((item, index)=> item === 2);
+console.log(checkFindMethod, 'find');
+
+// Array reduce() Method
+let checkReduceMthod = arrayThree.reduce((acc, currenct, index,array)=> {
+	
+})
+// Array includes() Method
+// indexOf Method
+// findIndex Method
